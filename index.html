@@ -14,7 +14,7 @@
         <div class="logo"><img src="./assets/images/logo-png.png" alt="emma_obelenge-logo"><h1>emma_obelenge</h1></div>
         <nav>
             <ul>
-                <li class="flex-item"><a href="#home" class="navBtn">Home</a></li>
+                <li class="flex-item" class="active-button"><a href="#home" class="navBtn">Home</a></li>
                 <li class="flex-item"><a href="#about" class="navBtn">About</a></li>
                 <li class="flex-item"><a href="#resume" class="navBtn">Resume</a></li>
                 <li class="flex-item"><a href="#services" class="navBtn">Services</a></li>
@@ -62,7 +62,7 @@
     <section id="about">
         <div class="about-me-heading-container">
             <h2 class="title">About Me</h2>
-            <p>I specialize in IT support and fullstack web development, helping businesses enhance their digital presence with modern solutions.</p>
+            <p>Specialty in IT support and fullstack web development, helping businesses enhance their digital presence with modern solutions.</p>
         </div>
 
         <div class="about-me-content-container">
@@ -209,8 +209,6 @@
                 </div>
             </div>
         </div>
-
-        <br>
         <div class="skill-list">
             <h3>Skills:</h3>
             <p>I combine digital expertise, graphic design, and full-stack development to craft innovative solutions, delivering seamless and meaningful brand experiences.</p>
@@ -284,9 +282,9 @@
             <div class="service-item">
                 <div class="service-item-header">
                     <h3>Websites</h3>
-                    <p>$2200</p>
+                    <p class="price">$2200</p>
                 </div>
-                <p class="service-item-text">I offer you the best design concepts and implementation for your websites</p>
+                <p class="service-item-text">I offer the best design concepts and implementation for your websites</p>
                 <a href="#" class="service-item-discover">Discover More</a>
                 <div class="service-item-design"></div>
             </div>
@@ -294,7 +292,7 @@
             <div class="service-item">
                 <div class="service-item-header">
                     <h3>Branding</h3>
-                    <p>$1100</p>
+                    <p class="price">$1100</p>
                 </div>
                 <p class="service-item-text">Reach out to me for hitting that brand awareness your organization deserves</p>
                 <a href="#" class="service-item-discover">Discover More</a>
@@ -304,7 +302,7 @@
             <div class="service-item">
                 <div class="service-item-header">
                     <h3>Ecommerce</h3>
-                    <p>$3500</p>
+                    <p class="price">$3500</p>
                 </div>
                 <p class="service-item-text">If you need a customized ecommerce website for your business, feel free to discuss with me.</p>
                 <a href="#" class="service-item-discover">Discover More</a>
@@ -314,9 +312,29 @@
             <div class="service-item">
                 <div class="service-item-header">
                     <h3>SEO</h3>
-                    <p>$1350</p>
+                    <p class="price">$1350</p>
                 </div>
                 <p class="service-item-text">To list your website first on any search engine, we will work together. </p>
+                <a href="#" class="service-item-discover">Discover More</a>
+                <div class="service-item-design"></div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-item-header">
+                    <h3>PC Repairs</h3>
+                    <p>From $200</p>
+                </div>
+                <p class="service-item-text">I offer you the best design concepts and implementation for your websites</p>
+                <a href="#" class="service-item-discover">Discover More</a>
+                <div class="service-item-design"></div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-item-header">
+                    <h3>Tech Support</h3>
+                    <p class="price">$1000</p>
+                </div>
+                <p class="service-item-text">I offer you the best design concepts and implementation for your websites</p>
                 <a href="#" class="service-item-discover">Discover More</a>
                 <div class="service-item-design"></div>
             </div>
@@ -326,16 +344,55 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2 class="title">Projects</h2>
+        <div class="project-toggle-button">
+            <ul>
+                <li><button class="active-button">Web Design</button></li>
+                <li><button>Graphics</button></li>
+                <li><button>IT Support</button></li>
+                <li><button>Coding</button></li>
+            </ul>
+        </div>
         <div class="projects-container">
             <div class="project">
-                <img src="assets/images/project1.jpg" alt="Project 1">
-                <h3>Portfolio Website</h3>
-                <p>A personal portfolio showcasing my skills.</p>
+                <div class="project-img-container"><img src="assets/images/project1.jpg" alt="Project 1"></div>
+                <h3 class="project-title">Web Design</h3>
+                <p class="project-description">A personal portfolio showcasing my skills.</p>
             </div>
+
             <div class="project">
-                <img src="assets/images/project2.jpg" alt="Project 2">
-                <h3>E-commerce Website</h3>
-                <p>Developed an online store using HTML & CSS.</p>
+                <div class="project-img-container"><img src="assets/images/project1.jpg" alt="Project 1"></div>
+                <h3 class="project-title">E-commerce Website</h3>
+                <p class="project-description">Developed an online store using HTML & CSS.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-img-container"><img src="assets/images/project1.jpg" alt="Project 1"></div>
+                <h3 class="project-title">E-commerce Website</h3>
+                <p class="project-description">Developed an online store using HTML & CSS.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-img-container"><img src="assets/images/project1.jpg" alt="Project 1"></div>
+                <h3 class="project-title">E-commerce Website</h3>
+                <p class="project-description">Developed an online store using HTML & CSS.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-img-container"><img src="assets/images/project1.jpg" alt="Project 1"></div>
+                <h3 class="project-title">E-commerce Website</h3>
+                <p class="project-description">Developed an online store using HTML & CSS.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-img-container"><img src="assets/images/project1.jpg" alt="Project 1"></div>
+                <h3 class="project-title">E-commerce Website</h3>
+                <p class="project-description">Developed an online store using HTML & CSS.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-img-container"><img src="assets/images/project1.jpg" alt="Project 1"></div>
+                <h3 class="project-title">E-commerce Website</h3>
+                <p class="project-description">Developed an online store using HTML & CSS.</p>
             </div>
         </div>
     </section>
