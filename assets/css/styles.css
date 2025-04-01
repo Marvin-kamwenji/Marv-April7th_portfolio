@@ -4,7 +4,7 @@
     --dark-mode: #050C17;
     --light-mode-text: black;
     --dark-mode-text: white;
-    --alternate-color: rgb(255, 196, 31);
+    --alternate-color: #c38f00;
     --button-color: #994FF5;
     --button-color-dark: #8131e3;
 }
@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: var(--light-mode);
     scroll-behavior: smooth;
 }
@@ -622,7 +622,6 @@ section:not(.hero){
 
 /* Projects Section */
 .project-toggle-button {
-    border: 3px solid red;
     width: 60%;
     margin: auto;
 }
@@ -636,19 +635,76 @@ section:not(.hero){
     flex-wrap: nowrap;
 }
 
+.active-project-btn {
+    background-color: rgb(211, 154, 0) !important;
+    color: var(--dark-mode-text) !important;
+}
+
 .project-toggle-button button {
-    padding: .4rem .7rem;
+    padding: .7rem 1rem;
     width: max-content;
     color: var(--light-mode-text);
     background-color: transparent;
     border: none;
     border-radius: 1rem;
+    transition: color .3s;
+    transition: background-color .3s;
 }
 
 .project-toggle-button button:hover {
     cursor: pointer;
-    background-color: var(--alternate-color);
+    background-color: rgba(255, 216, 131, 0.782);
+    color: rgb(154, 100, 0);
 }
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 65rem;
+    min-width: 30rem;
+    justify-content: center;
+    margin: auto;
+    gap: 2rem;
+}
+
+.project {
+    width: 30rem;
+    min-width: 25rem;
+    height: 30rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(195, 195, 195, 0.259);
+}
+
+.project-img-container {
+    height: 65%;
+    border-top-right-radius: 1.9rem;
+    border-top-left-radius: 1.9rem;
+    width: 100%;
+}
+
+.project h3, .project p {
+    text-align: left;
+    margin: 1rem;
+}
+
+.project h3 {
+    color: var(--alternate-color);
+}
+
+.project-img-container img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1.9rem;
+    border-top-right-radius: 1.9rem;
+}
+
+/* Contact Me Section */
+#contact {
+    background-color: var(--dark-mode);
+}
+
+
 
 
 
