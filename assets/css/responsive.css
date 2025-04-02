@@ -1,17 +1,148 @@
-@media screen and (max-width: 860px) {
-    header h1 {
-        font-size: 1.2rem;
+/* Variables setup */
+:root {
+    --light-mode: white;
+    --dark-mode: #050C17;
+    --light-mode-text: #050C17;
+    --dark-mode-text: white;
+    --alternate-color: #f8bc17;
+    --button-color: #994FF5;
+    --button-color-dark: #8131e3;
+    --border-gray: #b4b8c627;
+    --resonsive-font-size: max(1rem, 1.3vw);
+}
+
+/* For tablet screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        background-color: purple;
     }
-    
+
     nav ul {
         display: none;
     }
 
-    .hero h1 {
-        font-size: 30px;
+    nav .fa-bars {
+        display: block;
+        color: var(--dark-mode-text);
+        cursor: pointer;
+        font-size: 1.5rem;
     }
 
-    .project {
-        width: 95%;
+    .hero {
+        flex-direction: column-reverse;
     }
+
+    .hero-portrait {
+        width: 100%;
+        text-align: center;
+        height: 30rem;
+    }
+
+    .hero-content {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: left;
+        padding: 2rem 5rem;
+    }
+
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 60%;}
+    }
+
+    .personal-summary {
+        background-color: var(--border-gray);
+        padding: 1rem;
+        border-radius: 1rem;   
+    }
+
+    .personal-summary div {
+        text-align: center;
+    }
+
+    section:not(.hero), footer {
+        padding: 3rem 0;
+    }
+
+    .about-me-heading-container {
+        width: 80%;
+    }
+
+    .about-me-content-container {
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .about-me-content {
+        width: 70%;
+    }
+
+    .about-me-portrait {
+        width: 12rem;
+    }
+
+    .ruler .icon{
+        width: 2rem;
+    }
+
+    .resume-container-left-side > .experience {
+        margin: 0;
+        gap: 0;
+        box-shadow: none;
+        padding-right: 1rem;
+    }
+
+    .resume-container-right-side > .experience {
+        margin: 0;
+        gap: 0;
+        box-shadow: none;
+        padding-left: 1rem;
+    }
+
+    .experience > div {
+        display: block;
+    }
+
+    .experience > div h4 {
+        margin-bottom: .5rem;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        width: 90%;
+    }
+
+    .contact-content h2 {
+        font-size: 1.5rem;
+        width: 25rem;
+    }
+
+    .contact-img img {
+        height: 15rem;
+        max-width: 50rem;
+    }
+
+    footer {
+        padding-bottom: 0;
+    }
+
+
+
+}
+
+
+
+
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+    header {
+        background-color: green;
+    }
+
+
+
+
+    
 }
