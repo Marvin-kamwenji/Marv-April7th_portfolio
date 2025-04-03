@@ -8,7 +8,6 @@
     --button-color: #994FF5;
     --button-color-dark: #8131e3;
     --border-gray: #b4b8c627;
-    --resonsive-font-size: max(1rem, 1.3vw);
 }
 
 /* For tablet screens */
@@ -28,38 +27,46 @@
         font-size: 1.5rem;
     }
 
-    .hero {
-        flex-direction: column-reverse;
-    }
-
-    .hero-portrait {
-        width: 100%;
-        text-align: center;
-        height: 30rem;
-    }
+    header h1 {font-size: 2rem;}
 
     .hero-content {
-        flex-direction: row;
-        justify-content: flex-start;
-        width: 100%;
         flex-wrap: wrap;
         text-align: left;
-        padding: 2rem 5rem;
+        padding: 1rem;
+        justify-content:flex-start;
+    }
+
+    .hero-content h3 {
+        font-size: 1.5rem;
     }
 
     @keyframes typing {
         from { width: 0; }
-        to { width: 60%;}
+        to { width: 90%;}
+    }
+
+    .hero-button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        margin-bottom: 10rem;
+    }
+
+    .hero-portrait {
+        border-bottom-left-radius: 1rem;
     }
 
     .personal-summary {
+        position: absolute;
+        top: 36rem;
+        left: 50%;
+        transform: translateX(-50%);
         background-color: var(--border-gray);
         padding: 1rem;
-        border-radius: 1rem;   
-    }
-
-    .personal-summary div {
-        text-align: center;
+        border-radius: 1rem;
+        width: 80%;
     }
 
     section:not(.hero), footer {
@@ -128,9 +135,13 @@
         padding-bottom: 0;
     }
 
-
-
+    .footer-item-bottom {
+        position: relative;
+        background-color: transparent;
+    }
 }
+
+
 
 
 
