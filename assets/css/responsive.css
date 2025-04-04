@@ -27,10 +27,6 @@ screen and (max-width: 767px) {
 
 /* For tablet screens */
 @media (min-width: 768px) and (max-width: 1023px) {
-    header {
-        background-color: purple;
-    }
-
     header h1 {font-size: 2rem;}
 
     .hero-content {
@@ -55,7 +51,7 @@ screen and (max-width: 767px) {
     }
 
     .hero {
-        margin-bottom: 10rem;
+        padding-bottom: 10rem;
     }
 
     .hero-portrait {
@@ -64,7 +60,7 @@ screen and (max-width: 767px) {
 
     .personal-summary {
         position: absolute;
-        top: 36rem;
+        top: 26rem;
         left: 50%;
         transform: translateX(-50%);
         background-color: var(--border-gray);
@@ -145,16 +141,8 @@ screen and (max-width: 767px) {
     }
 }
 
-
-
-
-
 /* Mobile devices */
 @media screen and (max-width: 767px) {
-    header {
-        background-color: green;
-    }
-
     nav ul {
         display: none;
     }
@@ -182,7 +170,7 @@ screen and (max-width: 767px) {
     }
 
     .hero-content {
-        width: 100vw;
+        width: 100%;
         flex-wrap:nowrap;
         text-align: left;
         margin: 0;
@@ -202,8 +190,12 @@ screen and (max-width: 767px) {
     }
 
     .hero-content > div > h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin-left: 1rem;
+    }
+
+    .hero-content > div > p {
+        padding-left: 1rem;
     }
 
     .hero-button-container {
@@ -268,7 +260,7 @@ screen and (max-width: 767px) {
         flex-wrap: nowrap;
         overflow-x: auto;
         justify-content: flex-start;
-        margin: 1rem;
+        width: 100%;
         padding: 1rem;
     }
 
@@ -305,6 +297,9 @@ screen and (max-width: 767px) {
         width: 100%;
     }
 
+    footer {
+        padding: 0;
+    }
     .footer-eclipse {
         border-radius: 0;
         padding: 1rem;
@@ -327,31 +322,45 @@ screen and (max-width: 767px) {
         padding: 0;
     }
 
-
-
-    
-
-    
-
-    
+    .cert-links-container li {
+        width: 100%;
+    }
 
 
     .ruler .icon{
+        display: none;
         width: 2rem;
     }
 
-    .resume-container-left-side > .experience {
-        margin: 0;
-        gap: 0;
-        box-shadow: none;
-        padding-right: 1rem;
-    }
-
+    .resume-container-left-side > .experience,
     .resume-container-right-side > .experience {
         margin: 0;
         gap: 0;
         box-shadow: none;
-        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+        border: 1px solid 0;
+    }
+
+    .resume-container-right-side {
+        position: absolute;
+        width: 90vw;
+        margin: 2rem;
+        top: -5px;
+        left: 1px;
+        padding-right: 2rem;
+    }
+
+    .resume-container-left-side {
+        width: 100%;
+        margin: .5rem;
+        margin-bottom: 19rem;
+        border: none;
+    }
+
+    .resume-container {
+        padding: 1rem 1rem 1rem 1.5rem;
+        position: relative;
     }
 
     .experience > div {
@@ -360,4 +369,10 @@ screen and (max-width: 767px) {
 
     .experience > div h4 {
         margin-bottom: .5rem;
+
     }
+
+    section {
+        overflow-x: hidden;
+    }
+}
