@@ -13,8 +13,21 @@
 @media (min-width: 768px) and (max-width: 1023px),
 screen and (max-width: 767px) {
     nav ul {
-    display: none;
+    display: flex;
+
+    /*Will be back to work on nav button for mobile phone view*/
+
+    /* flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;*/
     }
+
+    /*Will be back to work on nav button for mobile phone view*/
+    
+    /* nav {
+        border: 1px solid red;
+        position: relative;
+    } */
 
     nav .fa-bars {
         display: block;
@@ -143,10 +156,6 @@ screen and (max-width: 767px) {
 
 /* Mobile devices */
 @media screen and (max-width: 767px) {
-    nav ul {
-        display: none;
-    }
-
     .logo > img {
         width: 2rem;
         height: 2rem;

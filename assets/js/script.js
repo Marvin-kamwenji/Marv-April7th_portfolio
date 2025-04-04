@@ -59,6 +59,11 @@ function activateNightLight () {
     document.querySelectorAll(".project-button-container button").forEach(link => {
         link.style.color = darkModeText;
       });
+    document.querySelector(".contact-form").style.backgroundColor = darkMode;
+    document.querySelectorAll(".contact-form input").forEach(link => {
+        link.style.backgroundColor = "#c4c2c2";
+      });
+    document.querySelector("#contact-form-textarea").style.backgroundColor = "#c4c2c2";
 }
 
 // Day Light Theme implementation
@@ -84,9 +89,48 @@ function activateDayLight () {
         link.style.color = lightModeText;
       });
     document.querySelector(".title").style.color = darkModeText;
-
-
     document.querySelectorAll(".project-button-container button").forEach(link => {
         link.style.color = lightModeText;
       });
+    document.querySelector(".contact-form").style.backgroundColor = lightMode;
+    
+
+    document.querySelector(".contact-form").style.backgroundColor = lightMode;
+    document.querySelectorAll(".contact-form input").forEach(link => {
+        link.style.backgroundColor = "transparent";
+      });
+    document.querySelector("#contact-form-textarea").style.backgroundColor = "transparent";
 }
+
+// Contact Me Toggle features implementation
+
+const sayHelloBtn = document.querySelector(".contact-content > button");
+const contactForm = document.querySelector(".contact-form");
+const overlay = document.querySelector("#overlay");
+const closeBtn = document.querySelector(".close-button");
+
+sayHelloBtn.addEventListener("click", () => {
+        contactForm.style.display = "block";
+        overlay.style.display = "block";
+});
+
+overlay.addEventListener("click", () => {
+    overlay.style.display = "none";
+    contactForm.style.display = "none"
+})
+
+closeBtn.addEventListener("click", () => {
+    overlay.style.display = "none";
+    contactForm.style.display = "none"
+})
+
+// Logo click link implementation
+document.querySelector(".logo").addEventListener("click", () => {
+    window.location.href = "index.html";
+  });
+
+// added click function support for lets chat nav button
+const letsChatNavBtn = document.querySelector("#contact-nav-btn");
+letsChatNavBtn.addEventListener("click", () => {
+    window.location.href = "#contact";
+})
