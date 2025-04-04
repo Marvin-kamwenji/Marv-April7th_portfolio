@@ -790,6 +790,7 @@ animation-fill-mode: forwards;
     width: max(18rem, 25vw);
     border-radius: max(1rem, 2vw);
     box-shadow: 0 0 max(1rem, 1vw) rgba(195, 195, 195, 0.259);
+    cursor: pointer;
 }
 
 .project-img-container {
