@@ -17,7 +17,6 @@ A clean and modern **personal portfolio** website built with **HTML, CSS, and a 
 - **JavaScript (Intersection Observer for Animations)**
 
 ## 📷 Preview
-![Portfolio Screenshot](https://drive.google.com/file/d/1QL98R2ncHlse-lAI_bYl1ylPJ0sF9PM1/view?usp=sharing)
 
 ## 🎯 Usage
 1. Clone this repository:
@@ -27,13 +26,4 @@ A clean and modern **personal portfolio** website built with **HTML, CSS, and a 
 2. Open index.html in a browser.
 
 🔗 Live Demo
-View Portfolio Online. Click [Here](https://emma-obelenge.github.io/emma-obelenge_portfolio/)!
-
-🏆 Author
-Emmanuel Obelenge
-
-🔗 [GitHub](https://github.com/emma-obelenge)
-
-🔗 [LinkedIn](https://www.linkedin.com/in/emmanuel-obelenge)
-
-🔗 [X](https://x.com/emma_obelenge)
+View Portfolio Online. Click 
