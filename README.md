@@ -20,9 +20,7 @@ A clean and modern **personal portfolio** website built with **HTML, CSS, and a 
 
 ## 🎯 Usage
 1. Clone this repository:
-   ```bash
-   git clone https://github.com/emma-obelenge/emma-obelenge_portfolio.git
-
+   
 2. Open index.html in a browser.
 
 🔗 Live Demo
